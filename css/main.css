@@ -1,0 +1,94 @@
+.content-wrapper {
+  width: 90%;   
+}
+
+img {
+    width: 90%;
+    padding-bottom: 20px;
+}
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+header nav {
+    width: 80%;
+    
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .social-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+}
+
+footer .social-icons p {
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer .social-icons p i {
+    font-size: 1.3125em; ;
+}
+
+
+
+
+
+/* -------------------- Mobile Styles -------------------- */
+
+.idk {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+#project {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
