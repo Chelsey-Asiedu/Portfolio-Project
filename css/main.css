@@ -1,10 +1,7 @@
-.content-wrapper {
-  width: 90%;   
-}
+
 
 img {
     width: 90%;
-    padding: 20px 0px 20px 40px;
 }
 
 h4, h2 {
@@ -18,20 +15,27 @@ h4, h2 {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header .content-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
-    margin: 0;
-    width: 90% ;
+    margin-top: 30px;
+    margin-bottom: 
+    width: 90%;
 }
 
 header figure {
+    width: 35%;
     
 }
 
 header nav {
+
    width: 90%;
    margin: 30px 0px 60px 0px;
 }
@@ -43,15 +47,20 @@ header nav ul {
     padding: 0;
 }
 
-footer .content-wrapper {
+footer{
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
 
+footer .content-wrapper {
+   margin: 80px 0px 60px 0px ;
+
+}
+
 footer h3 {
-    margin: 80px 0px 60px 0px;
+    margin-bottom: 60px ;
+    text-align: center;
 }
 
 footer h4 {
@@ -68,21 +77,19 @@ footer .social-icons{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100px;
     margin-bottom: 60px;
 }
 
-footer .social-icons p {
-  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
 
 footer .social-icons p i {
     font-size: 1.3125em; ;
 }
 
+ footer .divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0
+ }
 
 
 
@@ -90,22 +97,39 @@ footer .social-icons p i {
 /* -------------------- Mobile Styles -------------------- */
 
 .idk {
-    margin-bottom: 80px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     padding: 0px 30px 0px 30px;
      display: flex;
     justify-content: center;
-     align-items: center;
-     text-align: center;
+    flex-flow: row wrap;
 
 }
 
 #project {
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
+}
+
+#project .content-wrapper {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.project-items{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+#project img {
+    margin-top: 20px;
+    padding: 0px 0px 0px 20px;
+}
+
+#project h2 {
+    margin: 0px 0px 20px 0px;
+}
 
 #project .description {
     margin: 40px 0px 30px 0px;
@@ -114,6 +138,12 @@ footer .social-icons p i {
 
 #project .tools {
     margin-bottom: 80px;  
+}
+
+#skills .content-wrapper{
+    margin-top: 0px ;
+    margin-bottom: 80px;
+    padding: 0px 120px;
 }
 
 #skills h4 {
@@ -130,9 +160,7 @@ footer .social-icons p i {
     margin-bottom: 40px;
 }
 
-#skills .tools {
-    margin-bottom: 40px;
-}
+
 
 .tools-icons {
     display: flex;
@@ -150,14 +178,25 @@ footer .social-icons p i {
     text-align: center;
 }
 
-#about h2 {
+#about .content-wrapper{
     margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#about figure {
+    margin-bottom: 40px;
+}
+
+#about h2 {
+    margin-top: 0px;
     margin-bottom: 60px;
 }
 
 #about p {
     margin-top: 40px;
-    margin-bottom: 80px;
 }
 
 
@@ -166,4 +205,134 @@ footer .social-icons p i {
 
 
 
+/* -------------------- Media Queries -------------------- */
 
+/*---------------------------- TABLETS ------------------------------*/
+@media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+       .content-wrapper{
+        margin: 120px 0;
+        max-width: 640px;
+       }
+     /*  Header  */
+     header .content-wrapper{
+        margin-bottom: 80px;
+     }
+
+    header nav {
+        width: 45%;
+        align-items: flex-end;
+        margin-bottom: 0px;
+    }
+    
+    /*  idk  */
+    .idk{
+        margin: 0px;
+    }
+    .idk .content-wrapper{
+        margin: 80px 0px;
+    }
+
+     /*  project  */
+    #project .content-wrapper {
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
+
+    #project h2{
+        margin-bottom: 80px;
+    }
+
+    
+    /*  footer  */
+    footer .content-wrapper{
+        width: 60%
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social {
+        width: 25%;
+    }
+
+  }
+
+/*---------------------------- DESKTOPS -----------------------------*/
+@media only screen and (min-width: 1024px) {
+    /*Desktop styles here*/
+
+    .content-wrapper{
+        margin: 140px 0;
+        max-width: 960px;
+    }
+
+    /*  Header  */
+
+    header .content-wrapper {
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+    }
+
+    nav{
+        margin: 0;
+    }
+
+    nav ul {
+        margin-top: 16px;
+    }
+
+
+    /*  idk  */
+    .idk{
+        margin: 0px;
+    }
+    .idk .content-wrapper{
+        margin-bottom: 140px;
+    }
+
+    /*  project  */
+
+    #project .content-wrapper{
+        margin-top: 140px;
+        padding: 0px 20px;
+    }
+
+    #project h2 {
+        margin-top: 0px;
+        margin-bottom: 80px;
+
+    }
+
+    .project-items {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .project-one,
+    .project-two,
+    .project-three,
+    .project-four {
+        width: 100%;
+    }
+
+    /*  skills  */
+    #skill .content-wrapper{
+        margin-bottom: 140px;
+    }
+
+    /*  about */
+    #about .content-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        column-gap: 10%;
+    }
+
+
+  }
