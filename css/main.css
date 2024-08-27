@@ -1,22 +1,126 @@
+/*  General Styles  */
+html {
+	font-size: 1em;
+}
+ 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    background-color:#ffe8d6 ;
+}
+
+ 
+ul, 
+ol {
+    list-style: none;
+}
+ 
+/*a {
+	text-decoration: none;
+    color: #453e4f
+}
+
+a:hover{color:#F19494;} */
 
 
+p {
+    font-size: 1.125em;
+    color: #453E4F ;
+    text-align: left;
+	
+}
 img {
     width: 90%;
 }
 
-h4, h2 {
+h1{
     text-align: center;
+    font-family: 'alike' , serif;
+    font-size: 2.8125em;
+    font-weight: 700;
+    color:#453E4F 
 }
 
+h2 {
+    text-align: center;
+    font-family: 'alike', serif;
+    font-size: 2.1875em;
+    font-weight: 700;
+    color:#453E4F 
+}
 
+h3,
+h4 {
+    text-align: center;
+    font-family: 'alike', serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    color:#453E4F 
+}
+
+figure {
+    margin: 0;
+}
+ 
+address {
+ font-style: normal;
+}
+
+.divider {
+    height: 1px;
+    background: #3a3a3a; 
+    margin: 20px 0 80px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+ 
+#go-to-top-button {
+   position: fixed;
+   bottom: 25px;
+   right: 25px;
+   width: 45px;
+   height: 45px;
+   background-color:#F19494;
+   color: #453E4F;
+   opacity: 0.5;
+   border: none;
+   border-radius: 50em;
+   padding: 10px 20px;
+   cursor: pointer;
+   box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.3);
+   
+  }
+
+  
+  #go-to-top-button:hover {
+    opacity: 1;
+  }
+
+  #go-to-top-button i{
+    position: relative;
+    height: 1.25em;
+    right: 2.5px;
+    top: 5px;
+  }
+
+
+  .hidden {
+    display: none;
+  }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
+    color: #FFE8D6;
+
 }
 
 header .content-wrapper {
@@ -25,85 +129,165 @@ header .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     margin-top: 30px;
-    margin-bottom: 
-    width: 90%;
+    margin-bottom: 0px;
+    width: 85%;
 }
 
 header figure {
-    width: 35%;
+    width: 30%;
+    margin: 0;
     
 }
 
 header nav {
-
    width: 90%;
    margin: 30px 0px 60px 0px;
+   font-size: 0.9375em;
+   font-weight: 500;
+   
 }
 
 header nav ul {
+    position: relative;
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 0;
+    /*gap: 20px; */
+    border-radius: 5px;
+    position: relative;
+}
+
+header nav ul li {
+    font-size: 1.2500em;
+    text-align: center;
+}
+
+/*.project{
+    width: 140px;
+}
+
+.skills {
+    width: 140px;
+}
+
+.about {
+    width: 140px;
+}
+
+.contact {
+    width: 140px;
+}*/
+
+header nav ul li a {
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    color: #453e4f;
+    /*display: block;*/
+
+}
+
+header #marker {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #F19494;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 4px;
 }
 
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #453E4F;
+    
 }
 
 footer .content-wrapper {
    margin: 80px 0px 60px 0px ;
-
+   
 }
 
-footer h3 {
-    margin-bottom: 60px ;
+footer h2 {
+    margin-top: 0;
+    margin-bottom: 10px ;
     text-align: center;
+    color: #FFE8D6;
 }
 
 footer h4 {
     margin-top: 0px;
     margin-bottom: 30px;
+    color: #FFE8D6;
 }
 
 footer .contact p {
     margin-top: 0px;
     margin-bottom: 60px;
+    color: #FFE8D6;
+    text-align: center;
 }
 
 footer .social-icons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 60px;
+    padding: 0px 115px;
+    border-radius: 50%;
+    height: 40px;
+
 }
 
 
 footer .social-icons p i {
-    font-size: 1.3125em; ;
+    font-size: 2.15em;
+    color:#F19494  ;
 }
 
- footer .divider {
+ /*footer .divider {
     width: 100%;
     height: 1px;
-    margin: 10px 0 20px 0
- }
+    margin: 10px 0 20px 0;
+    background: #3a3a3a; 
+    margin-bottom: 50px;
+ } */
 
 
 
 
 /* -------------------- Mobile Styles -------------------- */
 
+
+.content-wrapper{
+    width: 80%;
+    
+}
+
 .idk {
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin: 20px 0 30px 88px ;
     padding: 0px 30px 0px 30px;
+    height: 600px;
+    border-radius: 20px;
+    width: 75%;
+    background-image: url("../img/background-image-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
      display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
+    
+}
 
+
+
+.idk p{
+    font-size: 1.5625em;
 }
 
 #project {
@@ -111,43 +295,68 @@ footer .social-icons p i {
     justify-content: center;
 }
 
+
+
 #project .content-wrapper {
     margin-top: 80px;
     margin-bottom: 60px;
+    gap: 20px;
 }
 
 .project-items{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+ 
 }
 
+.projects {
+        border-radius: 10px;
+        box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.2);
+        background-color: #fff1e6;
+        padding: 25px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+
+
 #project img {
-    margin-top: 20px;
-    padding: 0px 0px 0px 20px;
+    margin-top: 50px;
+    padding: 0px 20px 0px 20px;
+    width: 70%;
 }
 
 #project h2 {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 #project .description {
     margin: 40px 0px 30px 0px;
-    text-align: center;
+    text-align: left;
 }
 
 #project .tools {
     margin-bottom: 80px;  
 }
 
+#skills {
+    display: flex;
+    justify-content: center;
+}
+
 #skills .content-wrapper{
     margin-top: 0px ;
     margin-bottom: 80px;
-    padding: 0px 120px;
 }
 
-#skills h4 {
-    margin: 0px 0px 40px 0px
+
+
+#skills h2 {
+    margin: 0px
 }
 
 
@@ -156,10 +365,14 @@ footer .social-icons p i {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 90px;
     margin-bottom: 40px;
 }
 
+.skills-icon i {
+    font-size: 5em;
+    
+}
 
 
 .tools-icons {
@@ -170,6 +383,11 @@ footer .social-icons p i {
     gap: 80px;
     margin-bottom: 80px;
 }
+
+.tools-icons i{
+    font-size: 5em;
+}
+
 
 #about {
     display: flex;
@@ -186,13 +404,21 @@ footer .social-icons p i {
     
 }
 
+
 #about figure {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+
+}
+
+#about img{
+    width: 30%;
+    border: solid 5px #453E4F;
+    border-radius: 50px;
 }
 
 #about h2 {
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 #about p {
@@ -208,131 +434,135 @@ footer .social-icons p i {
 /* -------------------- Media Queries -------------------- */
 
 /*---------------------------- TABLETS ------------------------------*/
-@media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
-       .content-wrapper{
-        margin: 120px 0;
-        max-width: 640px;
-       }
-     /*  Header  */
-     header .content-wrapper{
-        margin-bottom: 80px;
-     }
+@media only screen and (min-width: 768px)   {
 
-    header nav {
-        width: 45%;
-        align-items: flex-end;
-        margin-bottom: 0px;
+    .content-wrapper{
+        max-width: 640px;
     }
     
-    /*  idk  */
-    .idk{
-        margin: 0px;
-    }
-    .idk .content-wrapper{
-        margin: 80px 0px;
+    p{
+        font-size: 1.25em;
     }
 
-     /*  project  */
+    /*h2{
+        font-size: ;
+    } */
+
+    h3,
+    h4{
+        font-size: 1.75em;
+        line-height: 1.875em;
+    }
+
+    header .content-wrapper{
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+
+     }
+
+     header nav {
+        width: 40%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .idk{
+        margin-top: 60px; 
+    }
+
     #project .content-wrapper {
-        margin-top: 120px;
+        margin-top: 60px;
         margin-bottom: 80px;
     }
 
     #project h2{
-        margin-bottom: 80px;
+        margin-bottom: 0px;
     }
 
+
+    #project img{
+        width: 75%;
+    }
+
+    #project .description {
+        width: 85%;
+        
+    }
+
+    #project .projects {
+        width: 90%;
+    }
     
-    /*  footer  */
-    footer .content-wrapper{
+      footer 
+     footer .content-wrapper{
         width: 60%
+    
     }
 
-    .footer-content{
+    footer .footer-content{
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .social {
+    footer .social-icons{
+        gap: 65px;
+    }
+
+    footer .social {
         width: 25%;
     }
 
-  }
+} 
+
+
 
 /*---------------------------- DESKTOPS -----------------------------*/
-@media only screen and (min-width: 1024px) {
-    /*Desktop styles here*/
+
+ @media only screen and (min-width: 1024px){
 
     .content-wrapper{
-        margin: 140px 0;
-        max-width: 960px;
-    }
-
-    /*  Header  */
+       max-width: 960px;
+    } 
 
     header .content-wrapper {
-        margin-top: 80px;
-        margin-bottom: 80px;
-
+        margin: 45px;
     }
 
-    nav{
-        margin: 0;
+    .slider {
+        width: 25%;
     }
 
-    nav ul {
-        margin-top: 16px;
+    .idk {
+        width: 75%;
+        margin-left: 129px;
     }
 
+    #project .project-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 
-    /*  idk  */
-    .idk{
-        margin: 0px;
-    }
-    .idk .content-wrapper{
-        margin-bottom: 140px;
-    }
+    } 
 
-    /*  project  */
+    #project .projects {
+        width: 38%;
+    } 
 
-    #project .content-wrapper{
-        margin-top: 140px;
-        padding: 0px 20px;
-    }
 
-    #project h2 {
-        margin-top: 0px;
-        margin-bottom: 80px;
-
+    #project img{
+        width: 90%;
     }
 
-    .project-items {
+    #about .about-info{
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 50px;
     }
 
-    .project-one,
-    .project-two,
-    .project-three,
-    .project-four {
-        width: 100%;
+    #about img {
+        width: 95%;
     }
 
-    /*  skills  */
-    #skill .content-wrapper{
-        margin-bottom: 140px;
-    }
-
-    /*  about */
-    #about .content-wrapper{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        column-gap: 10%;
-    }
-
-
-  }
+}
