@@ -411,7 +411,7 @@ footer .social-icons p i {
 }
 
 #about img{
-    width: 30%;
+    width: 39%;
     border: solid 5px #453E4F;
     border-radius: 50px;
 }
@@ -508,6 +508,7 @@ footer .social-icons p i {
 
     footer .social-icons{
         gap: 65px;
+        padding: 0px;
     }
 
     footer .social {
@@ -562,7 +563,7 @@ footer .social-icons p i {
     }
 
     #about img {
-        width: 95%;
+        width: 78%;
     }
 
 }
