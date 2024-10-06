@@ -210,18 +210,17 @@ footer .contact p {
     text-align: center;
 }
 
-footer .social-icons{
+footer .social-wrapper{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 60px;
-    padding: 0px 115px 0px 79px;
-    border-radius: 50%;
-    height: 40px;
-    width: 45%;
-
 }
 
+footer .social-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 37%;
+}
 
 footer .social-icons p i {
     font-size: 2.15em;
@@ -237,16 +236,19 @@ footer .social-icons p i {
     
 }
 
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
 .hero-area {
-    margin: 20px 0 30px 15px ;
-    padding: 0px 30px 0px 30px;
+    margin: 20px 0 30px 0 ;
     height: 600px;
     border-radius: 20px; 
-    width: 75%;
     background-image: url("../img/background-image-4-copy.png");
     background-repeat: no-repeat;
     background-size: cover; 
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -440,7 +442,6 @@ footer .social-icons p i {
 
     .hero-area{
         margin-top: 60px; 
-        margin-left: 64px;
     }
 
     #project .content-wrapper {
@@ -484,8 +485,9 @@ footer .social-icons p i {
     }
 
     footer .social-icons{
-        gap: 65px;
-        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
     }
 
 
@@ -510,10 +512,7 @@ footer .social-icons p i {
         width: 25%;
     }
 
-    .hero-area {
-        width: 75%;
-        margin-left: 130px;
-    }
+    
 
     #project .project-wrapper{
         display: flex;
