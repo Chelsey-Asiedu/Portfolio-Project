@@ -316,6 +316,26 @@ footer .social-icons p i {
     margin-bottom: 80px;  
 }
 
+#project button {
+    background-color: #453e4f;
+    color:#FFE8D6;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 32px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'alike', serif;
+    transition-duration: 0.3s;
+}
+
+#project button:hover{
+    background-color: #F19494;
+    color: #453E4F;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 1;
+}
+
+
 #skills {
     display: flex;
     justify-content: center;
@@ -325,8 +345,6 @@ footer .social-icons p i {
     margin-top: 0px ;
     margin-bottom: 80px;
 }
-
-
 
 #skills h2 {
     margin: 0px
@@ -468,6 +486,10 @@ footer .social-icons p i {
         width: 90%;
     }
 
+    #project button {
+        padding: 10px 48px;
+    }
+
     #about p{
         font-size: 1.25em;
     }
@@ -528,6 +550,10 @@ footer .social-icons p i {
 
     #project img{
         width: 90%;
+    }
+
+    #project button {
+        padding: 10px 48px;
     }
 
     #about .about-info{
