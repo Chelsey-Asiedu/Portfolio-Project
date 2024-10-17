@@ -14,6 +14,12 @@ item.forEach(link =>{
     })
 })
 
+
+function gotoLivePage(link) {
+    console.log(link.value);
+    window.open(link.value);
+}
+
 console.log(gotoTopBtn);
 
 // adding onscroll event listener to window element //
