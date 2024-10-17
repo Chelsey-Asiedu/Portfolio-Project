@@ -210,18 +210,17 @@ footer .contact p {
     text-align: center;
 }
 
-footer .social-icons{
+footer .social-wrapper{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 60px;
-    padding: 0px 115px 0px 79px;
-    border-radius: 50%;
-    height: 40px;
-    width: 45%;
-
 }
 
+footer .social-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 37%;
+}
 
 footer .social-icons p i {
     font-size: 2.15em;
@@ -235,6 +234,11 @@ footer .social-icons p i {
 .content-wrapper{
     width: 80%;
     
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
 }
 
 .hero-area {
@@ -313,6 +317,32 @@ footer .social-icons p i {
 #project .tools {
     margin-bottom: 80px;  
 }
+
+#project button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #FFE8D6;
+    background-color: #453e4f;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'alike', serif;
+   
+}
+
+#project button:hover{
+    background-color: #FFE8D6;
+      color: #453e4f;
+      border: 2px solid #453e4f;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 #skills {
     display: flex;
@@ -440,7 +470,6 @@ footer .social-icons p i {
 
     .hero-area{
         margin-top: 60px; 
-        margin-left: 64px;
     }
 
     #project .content-wrapper {
@@ -484,8 +513,9 @@ footer .social-icons p i {
     }
 
     footer .social-icons{
-        gap: 65px;
-        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
     }
 
 
@@ -510,10 +540,6 @@ footer .social-icons p i {
         width: 25%;
     }
 
-    .hero-area {
-        width: 75%;
-        margin-left: 175px;
-    }
 
     #project .project-wrapper{
         display: flex;
@@ -531,6 +557,10 @@ footer .social-icons p i {
         width: 90%;
     }
 
+    #project button {
+        padding: 10px 48px;
+    }
+    
     #about .about-info{
         display: flex;
         flex-direction: row;
