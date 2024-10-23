@@ -1,7 +1,7 @@
 const gotoTopBtn= document.getElementById("go-to-top-button");
 
-let marker = document.querySelector("#marker");
-let item = document.querySelectorAll("nav li")
+
+let item = document.querySelectorAll("nav li");
 
 function indicator(e){
     marker.style.left = e.offsetLeft+"px";
