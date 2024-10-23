@@ -15,7 +15,6 @@ item.forEach(link =>{
 })
 
 function gotoLivePage(link) {
-    console.log(link.value);
     window.open(link.value);
 }
 
