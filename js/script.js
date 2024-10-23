@@ -19,7 +19,6 @@ function gotoLivePage(link) {
     window.open(link.value);
 }
 
-console.log(gotoTopBtn);
 
 // adding onscroll event listener to window element //
 window.onscroll = () => {
