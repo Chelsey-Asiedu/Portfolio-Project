@@ -1,6 +1,6 @@
 const gotoTopBtn= document.getElementById("go-to-top-button");
 
-
+let marker = document.querySelector("#marker");
 let item = document.querySelectorAll("nav li");
 
 function indicator(e){
@@ -16,11 +16,9 @@ item.forEach(link =>{
 
 
 function gotoLivePage(link) {
-    console.log(link.value);
     window.open(link.value);
 }
 
-console.log(gotoTopBtn);
 
 // adding onscroll event listener to window element //
 window.onscroll = () => {
