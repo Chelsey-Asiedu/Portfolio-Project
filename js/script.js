@@ -14,12 +14,12 @@ item.forEach(link =>{
     })
 })
 
-function gotoLivePage(link) {
-    window.open(link.value);
+function gotoLivePage(button) {
+    const url = button.getAttribute("data-url");
+    window.open(url, "_blank");
 }
 
 
-// adding onscroll event listener to window element //
 window.onscroll = () => {
     scrollFunction ();
 
