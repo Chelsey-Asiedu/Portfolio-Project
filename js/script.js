@@ -14,11 +14,6 @@ item.forEach(link =>{
     })
 })
 
-function gotoLivePage(button) {
-    const url = button.getAttribute("data-url");
-    window.open(url, "_blank");
-}
-
 
 window.onscroll = () => {
     scrollFunction ();
