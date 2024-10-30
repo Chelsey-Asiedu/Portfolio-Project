@@ -318,7 +318,7 @@ footer .social-icons p i {
     margin-bottom: 80px;  
 }
 
-#project button {
+#project .live-page {
     padding: 10px 26px;
     font-size: 18px;
     color: #FFE8D6;
@@ -336,7 +336,7 @@ footer .social-icons p i {
    
 }
 
-#project button:hover{
+#project .live-page:hover{
     background-color: #FFE8D6;
       color: #453e4f;
       border: 2px solid #453e4f;
@@ -536,10 +536,6 @@ footer .social-icons p i {
         margin: 45px;
     }
 
-    .slider {
-        width: 25%;
-    }
-
 
     #project .project-wrapper{
         display: flex;
@@ -557,7 +553,7 @@ footer .social-icons p i {
         width: 90%;
     }
 
-    #project button {
+    #project .live-page {
         padding: 10px 48px;
     }
     
