@@ -227,6 +227,10 @@ footer .social-icons p i {
     color:#F19494  ;
 }
 
+footer address a {
+    text-decoration: none;
+    color: #ffe8d6;
+}
 
 /* -------------------- Mobile Styles -------------------- */
 
@@ -374,6 +378,11 @@ footer .social-icons p i {
     
 }
 
+.skills-icon-p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 .tools-icons {
     display: flex;
