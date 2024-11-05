@@ -309,7 +309,6 @@ footer .social-icons p i {
 }
 
 #project .description {
-    margin: 40px 0px 30px 0px;
     text-align: left;
     font-size: 1em;
 }
@@ -494,6 +493,11 @@ footer .social-icons p i {
 
     #project .project-items {
         width: 90%;
+    }
+
+    #project .live-page {
+        padding: 10px 48px;
+        margin-top: 37.240px;
     }
 
     #about p{
