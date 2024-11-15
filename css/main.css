@@ -250,7 +250,7 @@ footer address a {
     margin: 20px 0 30px 0;
     height: 600px;
     border-radius: 20px;
-    background-image: url("../img/background-image-4-copy.png");
+    background-image: url("../img/background-image-4.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -419,6 +419,7 @@ footer address a {
 
 #about figure {
     margin-bottom: 45px;
+    width: 100%;
 
 }
 
@@ -585,7 +586,7 @@ footer address a {
     }
 
     #about img {
-        width: 78%;
+        width: 95%;
         margin-top: 33px;
     }
 
