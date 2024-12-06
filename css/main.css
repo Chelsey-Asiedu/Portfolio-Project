@@ -254,7 +254,7 @@ footer address a {
 }
 
 .hero-area {
-    margin: 20px 0 30px 15px;
+    margin: 20px 0 30px 0;
     padding: 0px 30px 0px 30px;
     height: 600px;
     border-radius: 20px;
@@ -408,7 +408,9 @@ footer address a {
 .tools-icons-p {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 #about {
